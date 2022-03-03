@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Junit5Test {
@@ -30,5 +31,11 @@ public class Junit5Test {
     void assertTrueTest() {
         assertTrue(3>2);
     }
+
+    @Test
+    void assertFalseTest() {
+        assertFalse(3<2);
+    }
 }
+
 

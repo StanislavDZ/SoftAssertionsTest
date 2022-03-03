@@ -22,8 +22,7 @@ public class Junit5Test {
         $("#wiki-tab").click();
         $("#wiki-pages-filter").sendKeys("so");
         $(byText("SoftAssertions")).click();
-        $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"))
-                .findElement(byText("@ExtendWith"));
+        $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
     }
 }
 

@@ -24,6 +24,7 @@ public class Junit5Test {
         $(byText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"))
                 .findElement(byText("@ExtendWith"));
+        //Во исполнении дз 8)
     }
 }
 
